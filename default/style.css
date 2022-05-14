@@ -8,13 +8,25 @@
 */
 
 body {
-	font-size: 13px!important;
+	font-size: 13.6px!important;
 	font-family: 'Space Mono', monospace;
 	background: #E8E9F3;
 	color: #000;
 	line-height: 1.4em;
 	text-align: justify;
 	/* font-weight: 300; */
+}
+
+canvas { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	z-index:1; 
+}
+
+#contenu { 
+	position:relative; 
+	z-index:2; 
 }
 
 hr {
@@ -26,6 +38,10 @@ hr {
 
 sub {
 	background-color: rgba(250, 170, 0, 1);
+}
+
+sub8 {
+	background-color: #E8E9F3;
 }
 
 sub1 {
@@ -54,15 +70,20 @@ h4 { font-size: 16px; margin-bottom: 1em; }
 
 /* paragraph width */
 #index p { margin-bottom: 1em; }
-#exhibit p, code, blockquote { width: 600px; margin-bottom: 1em; /* line-height: 1.3em; */ }
+#exhibit p, code, blockquote { width: 600px; margin-bottom: 1em; text-align: left; line-height: 2em;  /* line-height: 1.3em; */ }
 
 /* highlighter style - maybe you want to change colors? */
 .highlight { background: #ccff00; color: #000; }
 
 /* never adjust the margin or padding here unless you seriously know what you are doing */
 /* think #index .container and #exhibit .container for only padding adjustments */
-#index { width: 215px; background: #3BB273; /* line-height: 1.3em; */ }
-#exhibit { margin: 0 0 0 215px; }
+#index { width: 225px; 
+	background: rgb(44,255,0);
+background: linear-gradient(0deg, rgba(204, 255, 51,1) 0%, rgba(158, 240, 26,1) 50%, rgba(112, 224, 0,1) 100%);
+	line-height: 2em; 
+
+}
+#exhibit { margin: 0 0 0 250px; }
 
 /* styling the index */
 #index ul { list-style: none; margin: 0; }
@@ -73,7 +94,7 @@ h4 { font-size: 16px; margin-bottom: 1em; }
 /* they are mostly for complex customization */
 /* for tag display */
 #index ul#all_tags { list-style-type: none; margin-bottom: 1em; }
-#index ul#all_tags li { display: inline; margin-right: 3px; }
+#index ul#all_tags li { display: inline; margin-right: 13px; }
 #index ul#all_tags li a {  }
 
 /* styles for the section titles */
